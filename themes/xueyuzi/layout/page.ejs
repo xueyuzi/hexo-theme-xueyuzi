@@ -1,0 +1,11 @@
+
+<% switch(page.path){
+case "travel/index.html": %>
+    <%-partial('_partial/travel')%>
+<% break; %>
+<% case "music/index.html": %>
+    <%-partial('_partial/music')%>
+<% break; %>
+<% default: %>
+    <%-partial('index')%>
+<% } %>

@@ -1,0 +1,24 @@
+<div class="post-content">
+    <% site.posts.forEach(function(post){ %>
+    <div class="post-item">
+      <div class="post-item-title">
+        
+          <%= post.title %>
+        
+      </div>
+      <div class="post-item-desc animetion_post-item-desc">
+        
+          <%- post.content %>
+        
+      </div>
+    </div>
+  <% }) %>
+</div>
+
+<script>
+    $(function(){
+        $(".post-item-title").on("click",function(){
+            console.log($(this).siblings(".post-item-desc").toggle(500))
+        })
+    })
+</script>

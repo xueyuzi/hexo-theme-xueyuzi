@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+	</style>
+	<link rel="stylesheet" href="/css/layout/layout.css">
+
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="page">
+		<div class="wrap">
+			<h1 class="title">My Blog</h1>
+			<nav class="nav">
+				<a href="<%- config.root %>index.html">
+					<div id="toArticle" class="nav-item"></div>
+					<div class="desc">文章</div>
+				</a>
+				<a href="<%- config.root %>travel">
+					<div id="toTravel" class="nav-item"></div>
+					<div class="desc">足迹</div>
+				</a>
+				<a href="<%- config.root %>music">
+					<div id="toMusic" class="nav-item"></div>
+					<div class="desc">音乐</div>
+				</a>
+			</nav>
+			<div class="content">
+				<%- body %>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
